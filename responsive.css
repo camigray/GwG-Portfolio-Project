@@ -1,0 +1,113 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_menu {
+  display: none;
+}
+
+.hero, .top-news, .scores, .weather, .recent-news {
+  order: 10;
+}
+
+@media screen and (max-width: 569px) {
+  .header_logo {
+    width: auto;
+    height: 48px;
+    margin-right: 0.5em;
+  }
+  .header_title {
+    margin-left: 0;
+    font-size: 2em;
+    vertical-align: bottom;
+    width: 80%; 
+  }
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav_item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+  .header_menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  .header_menu svg {
+    width: 32px;
+    fill: #01156f;
+  }
+  .header {
+    padding-bottom: 1em; 
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .hero {
+    order: 0;
+    width: 60%;
+  }
+  .weather {
+    width: 40%;
+  }
+  .top-news {
+    order: 1;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 599px) {
+  
+  .weather_today_image {
+    width: 70%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hero {
+    width: 50%;
+  }
+  .top-news {
+    order: 1;
+    width: 50%;
+    font-size: 1.1em;
+    padding: .8em;
+  }
+  .scores {
+    order: 2;
+    width: 50%;
+  }
+  .weather {
+    order: 3;
+    width: 50%;
+  }
+  
+  .recent-news {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main, .header_inner, .nav, .content {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
