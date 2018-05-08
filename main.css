@@ -32,8 +32,7 @@ ul {
  */
 
 .header {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  min-height: 75px;
+  box-shadow: 0 .5px .5px rgb(1, 21, 111);
   transition: min-height 0.3s;
 }
 
@@ -56,6 +55,8 @@ ul {
 .header_flag {
   width: 70%;
   display: inline-block;
+  line-height: 1.2em;
+  margin-top: 1em;
 }
 
 .header_title {
@@ -68,49 +69,10 @@ ul {
 .header-subtitle {
   font-weight: 50;
   font-size: 1.2em;
-  margin: 0.5em 0.25em;
   display: inline-block;
   color: #00156f;
 }
 
-/*
- *
- * Top Level Navigation
- *
- */
-
-.nav {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.nav_list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.nav_item {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 24%;
-  text-align: center;
-  line-height: 24px;
-  padding: 24px;
-  text-transform: uppercase;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #616161;
-  padding: 1.5em;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-  color: #212121;
-}
 
 /*
  *
@@ -153,27 +115,3 @@ main {
  * Projects
  *
  */
-
-
-/*
- *
- * Footer
- *
- */
-
-footer {
-  border-top: 1px solid #E0E0E0;
-  padding: 1em;
-  width: 100%;
-}
-
-footer li {
-  display: inline-block;
-  margin: 0 1em;
-}
-
-footer a {
-  text-decoration: none;
-  color: #333;
-  padding: 1.5em;
-}
